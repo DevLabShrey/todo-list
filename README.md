@@ -25,9 +25,3 @@ It allows users to manage tasks with priorities, timestamps, completion tracking
 ---
 
 ## 📂 Project Structure
-
-## ▶️ How to Run
-
-1. Make sure Python is installed:
-```bash
-python --version
