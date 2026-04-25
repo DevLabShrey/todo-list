@@ -24,4 +24,3 @@ It allows users to manage tasks with priorities, timestamps, completion tracking
 
 ---
 
-## 📂 Project Structure
