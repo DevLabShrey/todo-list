@@ -1,13 +1,7 @@
-# -----------------------------
-# TO-DO LIST (UPGRADED VERSION)
-# -----------------------------
+
 
 import datetime
 
-
-# -----------------------------
-# LOAD & SAVE
-# -----------------------------
 
 def load_tasks():
     try:
@@ -26,10 +20,6 @@ def save_tasks(tasks):
         for task in tasks:
             file.write(task + "\n")
 
-
-# -----------------------------
-# ADD TASK (with priority + time)
-# -----------------------------
 
 def add_task(tasks):
     task = input("Enter task: ")
@@ -50,9 +40,6 @@ def add_task(tasks):
     print("Task added successfully!")
 
 
-# -----------------------------
-# VIEW TASKS
-# -----------------------------
 
 def view_tasks(tasks):
     if not tasks:
@@ -63,10 +50,6 @@ def view_tasks(tasks):
     for i, task in enumerate(tasks, start=1):
         print(f"{i}. {task}")
 
-
-# -----------------------------
-# MARK COMPLETE
-# -----------------------------
 
 def mark_complete(tasks):
     view_tasks(tasks)
@@ -87,11 +70,6 @@ def mark_complete(tasks):
     except ValueError:
         print("Enter a valid number.")
 
-
-# -----------------------------
-# DELETE TASK
-# -----------------------------
-
 def delete_task(tasks):
     view_tasks(tasks)
 
@@ -109,9 +87,6 @@ def delete_task(tasks):
         print("Enter a valid number.")
 
 
-# -----------------------------
-# MAIN MENU
-# -----------------------------
 
 def main():
     tasks = load_tasks()
